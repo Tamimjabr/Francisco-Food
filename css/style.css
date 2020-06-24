@@ -1,0 +1,190 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    perspective: 600px;
+   font-weight: 600;       
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(176, 129, 194,0.6);
+}
+.header{
+    height: 50vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/katie-smith-uQs1802D0CQ-unsplash.jpg);
+    background-size: cover;
+    background-position-y: center;
+    /*aligning the text in the center*/
+    text-align: center;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 200%;
+    /*To position the menu button relative to the header*/
+    position: relative;
+}
+#menu{
+    position: absolute;
+    top:20px;
+    right: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color:rgba(176, 129, 194,0.8);
+    padding: 10px 15px 10px 5px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+     
+}
+/*styling the icon of the Menu */
+#menu > i{
+    padding: 5px;
+
+}
+.sideNav{
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    display: none;/*We change it with js*/
+    right: 0;
+    top: 0;
+    z-index: 1;/*stay on top*/
+    background-color: rgba(176, 129, 194);
+    overflow-x: hidden;/*no horizontal scroll*/
+    padding-top: 60px;
+    transition: 0.5s;
+    text-align: right;
+    font-size: 20PX;
+}
+.sideNav > a{
+    text-decoration: none;
+    display: block;
+    padding: 15px 60px 15px 0px;
+   
+    color: white;
+    transition: 0.5s; /*same transition as the hole sideNav*/
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.5px;
+}
+.sideNav > a:hover{
+    color: rgb(14, 13, 13);
+}
+.closeBtn{
+    /*positioning the x icon*/
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+/*The types of food section*/
+.foodTypes{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 30%;
+    /*aligning the text div inside the card*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-size: cover;
+background-position: center center;
+}
+/*The text inside the cards*/
+.foodText{
+    background-color: rgba(19, 18, 18, 0.5);
+    color: white;
+    padding: 15px 10px;
+}
+.chicken{
+    background-image: url(../images/alison-marras-GyV6SL_fKsI-unsplash.jpg);
+}
+.meat{
+    background-image: url(../images/emerson-vieira-cpkPJ-U9eUM-unsplash.jpg);
+}
+.pastries{
+    background-image: url(../images/jem-sahagun-RIeDoBno7uo-unsplash.jpg);
+}
+.spagetti{
+    background-image: url(../images/krista-stucchio-2CZ0Zpuj-gU-unsplash.jpg);
+}
+.sallad{
+    background-image: url(../images/dan-gold-4_jhDO54BYg-unsplash.jpg);
+}
+.sweets{
+    background-image: url(../images/dilyara-garifullina-qVPQpKuOg_U-unsplash.jpg);
+}
+.cocktail{
+    background-image: url(../images/element5-digital-CpBBsda2eRI-unsplash.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.contact{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(36, 31, 38);
+    
+}
+.information{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 60px 0px 15px 0px;
+    font-family: 'Sriracha', cursive;
+
+}
+.information > h2{
+    padding: 20px;
+}
+.fab, .fas{
+    padding: 10px;
+    font-size: 150%;
+}
+.fa-youtube{
+    color: 	#ff0000;
+   
+}
+.fa-instagram{
+    color:#9a37ac ;
+}
+.fa-envelope{
+    color: #1857e0;
+}
+@media screen and (max-width:770px){
+    .header, .contact,.information{
+        width: 100%;  
+    }
+}
+@media screen and (max-height: 450px) {
+    .sideNav {padding-top: 15px;}
+    .sideNav a {font-size: 18px;}
+
+}
