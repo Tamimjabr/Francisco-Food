@@ -48,7 +48,7 @@ body{
 }
 .sideNav{
     height: 100%;
-    width: 20%;
+    width: 250px;
     position: fixed;
     display: none;/*We change it with js*/
     right: 0;
@@ -167,17 +167,24 @@ background-position: center center;
 .fab, .fas{
     padding: 10px;
     font-size: 150%;
+    border-radius: 50%;
 }
 .fa-youtube{
     color: 	#ff0000;
    
 }
 .fa-instagram{
-    color:#9a37ac ;
+    color:#9a37ac;
 }
 .fa-envelope{
     color: #1857e0;
 }
+.fa-instagram:hover,.fa-envelope:hover,.fa-youtube:hover{
+   
+    background-color: blanchedalmond;
+}
+
+
 @media screen and (max-width:770px){
     .header, .contact,.information{
         width: 100%;  
