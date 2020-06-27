@@ -11,36 +11,38 @@ body{
     flex-direction: column;
     background-color: rgba(176, 129, 194,0.6);
 }
-.header{
-    height: 50vh;
+.navigationBar{
+    min-height: 100px;
     width: 80%;
+    background-color: rgb(36, 31, 38);
     display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/katie-smith-uQs1802D0CQ-unsplash.jpg);
-    background-size: cover;
-    background-position-y: center;
-    /*aligning the text in the center*/
-    text-align: center;
+   
+}
+.navigationBar > a{
+    text-decoration: none;
+    font-size:  16px;
     color: white;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10%;
+}
+.navigationBar > a:hover{
+    color: black;
+    background-color:white;
+}
+#franciscoText{
     font-family: 'Dancing Script', cursive;
-    font-size: 200%;
-    /*To position the menu button relative to the header*/
-    position: relative;
+    font-size: 30px;
+
 }
-/*Logo*/
-.logo{
-    position: absolute;
-    top: 20px;
-    left: 40px;
-    width: 200px;
-    height: 200px;
- ;
+#arrow{
+    color: teal;
 }
-.logo > a> img{
-    width: 100%;
-    border-radius: 50%
-}
+/*from the main stylesheet*/
 #menu{
     position: absolute;
     top:20px;
@@ -88,14 +90,17 @@ body{
     color: rgb(14, 13, 13);
     background-color: white;
 }
-.closeBtn{
+
+.sideNav .closeBtn{
     /*positioning the x icon*/
     position: absolute;
     top: 0;
     left: 20px;
     border-radius: 50%;
+    
 }
-/*The types of food section*/
+
+/*The different dishes */
 .foodTypes{
     width: 80%;
     display: flex;
@@ -156,6 +161,21 @@ background-position: center center;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*footer*/
 .contact{
     width: 80%;
@@ -198,24 +218,26 @@ background-position: center center;
    
     background-color: blanchedalmond;
 }
-/*Logo in the contact*/
-.contact .logo{
-    width: 100px;
-}
-
 
 @media screen and (max-width:770px){
-    .header, .contact,.information{
+    .navigationBar, .contact{
         width: 100%;  
+    }
+    .navigationBar{
+        flex-direction: column;
+       
     }
     .card{
         width: 150px;
         height: 150px;
-  
+    }
+    .navigationBar > a{
+        margin: 10px;
+        padding: 5px;;
     }
 }
+
 @media screen and (max-height: 450px) {
     .sideNav {padding-top: 15px;}
     .sideNav a {font-size: 18px;}
-
 }

@@ -1,10 +1,10 @@
 $(function(){
     //opening the menu
     $("#menu").click(function(){
-        $(".sideNav").fadeIn(900);
+        $(".sideNav").animate({width:"+=250px"}, 500);
     });
     //closing the menu
     $(".closeBtn").click(function(){
-        $(".sideNav").fadeOut(900);
+        $(".sideNav").animate({width:"-=250px"}, 500);
     });
 });
